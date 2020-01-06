@@ -6,16 +6,12 @@ RUN add-apt-repository ppa:openjdk-r/ppa
 # Dependencies
 RUN apt-get update \
     && apt-get install -y \
-        software-properties-common \
-        build-essential \
+        build-essential \  
         wget \
-        xvfb \
         curl \
         git \
-        mercurial \
         maven \
         openjdk-11-jdk \
-        ant \
         ssh-client \
         unzip \
         iputils-ping \
