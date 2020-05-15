@@ -17,6 +17,8 @@ RUN apt-get update \
         iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
+RUN apt-get --only-upgrade install maven -y
+
 # Install nvm with node and npm
 ENV NODE_VERSION=8.9.4 \
     NVM_DIR=/root/.nvm \
